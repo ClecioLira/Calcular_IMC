@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: rgb(0, 54, 0);
+    scrollbar-width: thin;
+    scrollbar-color: rgba(121,255,111,1) white;
+}
+*::-webkit-scrollbar {
+    width: 15px;
+}
+*::-webkit-scrollbar-track {
+    background: white;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: rgba(121,255,111,1);
+    border: 1px solid white;
+}
+
+header {
+    margin: 0 auto;
+    padding: 1.5rem auto;
+    text-align: center;
+    background: linear-gradient(130deg, rgba(255,255,255,1) 0%, rgba(121,255,111,1) 100%);
+    border-bottom-right-radius: 2rem;
+}
+header img {
+    width: 80px;
+    height: 80px;
+}
+header #icon {
+    margin: 0 auto 1rem;
+    padding-top: 1rem;
+}
+header h1 {
+    width: 200px;
+    margin: 0 auto 1rem;
+}
+header p {
+    width: 300px;
+    margin: 0 auto;
+    text-align: justify;
+    padding-bottom: 10rem;
+}
+
+main {
+    margin: -8rem auto;
+}
+main #calculadora {
+    margin: 0 auto;
+    padding: 1.5rem;
+    width: 300px;
+    background-color: white;
+    border-radius: .5rem;
+    box-shadow: 1rem 0 3rem rgba(0, 0, 0, 0.5);
+}
+main #calculadora h2 {
+    margin-bottom: .8rem;
+}
+main #calculadora input {
+    margin: .3rem auto 1rem;
+    padding: .7rem;
+    width: 100%;
+    border-radius: .5rem;
+    border: 1px solid rgba(121,255,111,1);
+    outline-color: rgb(0, 101, 0);
+}
+main #calculadora input::placeholder {
+    text-align: right;
+}
+main #calculadora button {
+    padding: .8rem;
+    border-radius: .5rem;
+    border: 1px solid rgb(0, 101, 0);
+    background-color: rgba(121,255,111,1);
+    color: rgb(0, 101, 0);
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+main #calculadora button:hover {
+    transform: scale(1.1);
+    transition: .2s;
+}
+main #resultado {
+    background-color: rgba(121,255,111,1);
+    padding: 1rem;
+    border-top-right-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+}
+main #resultado h3 {
+    margin: .2rem 0 .2rem;
+}
+main #resultado p {
+    padding: .2rem 0 .2rem;
+}
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+}
+
+main #melhorias {
+    margin: 3rem auto 0;
+    text-align: center;
+}
+main #melhorias h2 {
+    margin: 0 auto 1.5rem;
+    width: 180px;
+}
+
+main #alimentacao img,
+main #atividade_fisica img,
+main #durma img {
+    width: 50px;
+    height: 50px;
+    margin: 1.5rem auto .5rem;
+}
+main #alimentacao h3,
+main #atividade_fisica h3,
+main #durma h3 {
+    width: 300px;
+    margin: 0 auto .5rem;
+}
+main #alimentacao li,
+main #atividade_fisica li,
+main #durma li,
+main #informacoes li,
+main #recomendacoes li {
+    text-align: left;
+    margin: 0 auto;
+    width: 300px;
+    padding-bottom: .5rem;
+}
+
+main #informacoes,
+main #recomendacoes {
+    margin: 2rem auto;
+    text-align: center;
+}
+main #informacoes h2,
+main #recomendacoes h2 {
+    margin: 0 auto 1rem;
+}
+
+footer #final {
+    text-align: center;
+    margin: 0 auto 2rem;
+    width: 300px;
+    padding-top: 1rem;
+}
+footer {
+    text-align: center;
+    margin-top: 9rem;
+    background: linear-gradient(320deg, rgba(255,255,255,1) 0%, rgba(121,255,111,1) 100%);
+    border-top-left-radius: 2rem;
+}
+footer #redes {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+footer img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 1rem;
+}
+footer img:hover {
+    transform: scale(1.2);
+    transition: .2s;
+}

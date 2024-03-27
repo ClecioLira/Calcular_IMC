@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="shortcut icon" href="img/imc.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media_queries.css">
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <header id="header">
+        <div id="icon"><img src="img/imc.png" alt="Imagem de uma balança"></div>
+        <div>
+            <h1>Calculadora do Indice de Massa Corporal</h1>
+            <p>A calculadora de IMC é uma ferramenta gratuita e fácil de usar que permite calcular seu Índice de Massa Corporal (IMC) a partir de seu peso e altura.</p>
+        </div>
+    </header>
+    <main>
+        <div id="calculadora">
+            <h2>Insira os dados abaixo</h2>
+            <label for="peso">Peso (Kg) <br><input type="number" name="peso" id="peso" min="0" placeholder="Ex.: 60" onkeypress="if (event.keyCode === 13) atualizarIMC()" required></label> <br>
+            <label for="altura">Altura (M) <br><input type="number" name="altura" id="altura" min="0" placeholder="Ex.: 1.70" onkeypress="if (event.keyCode === 13) atualizarIMC()" required></label>
+            <button onclick="atualizarIMC()">Resultado</button>
+            <div id="resultado">
+                <h3 id="result">Bem Vindo!</h3>
+                <p id="descricao_result">Insira o seu peso e a sua altura e veja o resultado do seu IMC aqui!!</p>
+            </div>
+        </div>
+        <div id="melhorias">
+            <h2 id="h2">Como melhorar o meu IMC?</h2>
+            <div id="cards">
+                <div id="alimentacao">
+                    <div><img src="img/comida-dietetica.png" alt="icone de comida"></div>
+                    <h3>Adote uma alimentação balanceada</h3>
+                    <ul>
+                        <li>Consuma mais frutas, legumes, verduras e grãos integrais.</li>
+                        <li>Limite o consumo de alimentos processados, ricos em gorduras saturadas e açúcares.
+                        </li>
+                        <li>Beba bastante água.</li>
+                    </ul>
+                </div>
+                <div id="atividade_fisica">
+                    <div><img src="img/academia.png" alt="icone de um altere"></div>
+                    <h3>Pratique atividade física regular</h3>
+                    <ul>
+                        <li>Procure fazer pelo menos 30 minutos de atividade física moderada na maioria dos dias da semana.</li>
+                        <li>Você pode escolher entre diferentes tipos de atividades, como caminhada, corrida, natação, ciclismo, dança, etc.
+                        </li>
+                    </ul>
+                </div>
+                <div id="durma">
+                    <div><img src="img/dormir.png" alt="icone de uma lua dormindo"></div>
+                    <h3>Durma bem</h3>
+                    <ul>
+                        <li>Dormir pelo menos 7 horas por noite é essencial para a saúde geral e pode ajudar a controlar o peso.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="dicas">
+            <div id="informacoes">
+                <h2>Informações adicionais</h2>
+                <ul>
+                    <li>A classificação do IMC é a mesma para homens e mulheres.</li>
+                    <li>O IMC não é um indicador perfeito da saúde de uma pessoa, pois não leva em consideração a composição corporal (massa muscular e gorda).
+                    </li>
+                    <li>Pessoas com muita massa muscular podem ter um IMC elevado mesmo que não sejam obesas.</li>
+                    <li>Pessoas com pouca massa muscular podem ter um IMC normal mesmo que estejam acima do peso.</li>
+                </ul>
+            </div>
+            <div id="recomendacoes">
+                <h2>Recomendações</h2>
+                <ul>
+                    <li>Consulte um médico ou nutricionista para obter uma avaliação completa da sua saúde.</li>
+                    <li>Adote um estilo de vida saudável com uma alimentação balanceada e prática regular de atividade física.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div id="final">
+            <h3>Ao seguir essas dicas, você poderá melhorar o seu resultado do IMC e ter uma vida mais saudável.</h3>
+        </div>
+        <div id="redes">
+            <a href=""><img src="img/github.png" alt=""></a>
+            <a href=""><img src="img/instagram.png" alt=""></a>
+            <a href=""><img src="img/linkedin.png" alt=""></a>
+        </div>
+        <div>
+            <p>@ 2024 Copyright: <a href="#">Clécio Lira</a></p>
+        </div>
+    </footer>
+</body>
+</html>

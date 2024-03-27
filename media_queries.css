@@ -1,0 +1,58 @@
+@media screen and (min-width:768px) {
+    header h1,
+    header p,
+    main #melhorias h2,
+    main #alimentacao h3,
+    main #atividade_fisica h3,
+    main #durma h3,
+    main #alimentacao li,
+    main #atividade_fisica li,
+    main #durma li,
+    main #informacoes li,
+    main #recomendacoes li,
+    footer #final {
+        width: 500px;
+    }
+    main #calculadora {
+        width: 450px;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    header h1,
+    header p {
+        width: 800px;
+        text-align: center;
+    }
+    main #melhorias h2,
+    main #alimentacao h3,
+    main #atividade_fisica h3,
+    main #durma h3,
+    main #alimentacao li,
+    main #atividade_fisica li,
+    main #durma li,
+    main #informacoes li,
+    main #recomendacoes li,
+    footer #final {
+        width: 400px;
+    }
+    main #calculadora {
+        width: 600px;
+    }
+    main #melhorias #cards {
+        display: flex;
+        justify-content: center;
+        gap: 4rem;
+    }
+    main #dicas {
+        margin-top: 3rem;
+        display: flex;
+    }
+    main #dicas #informacoes {
+        margin-right: -15rem;
+    }
+    footer #final {
+        margin-top: 2rem;
+        width: 700px;
+    }
+}
